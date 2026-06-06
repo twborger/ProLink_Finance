@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ProLink Finance</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- === FAVICONS - Full Package === -->
+			<link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+			
+			<!-- Standard browser icons -->
+			<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+			
+			<!-- Android Chrome icons -->
+			<link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+			<link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+			
+			<!-- Apple devices -->
+			<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+			
+			<!-- Web App Manifest -->
+			<link rel="manifest" href="favicon_io/site.webmanifest">	
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<img src="images/LinkWatermark.png" 
+								alt="ProLink Finance" 
+								style="width: 90%; height: 90%; object-fit: contain; margin: 5% 0 0 0.5%; border-radius: 50%;">
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>ProLink Finance</h1>
+								<p>Your Trusted Mortgage Broker for Home Loans, Debt Consolidation & More.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#financing">Financing</a></li>
+								<li><a href="#news">News</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/Graduation.jpg" alt="" /></span>
+								<p>At ProLink Finance, we make your homeownership dreams a reality. With over 10 years of industry experience, our expert team, led by Head Broker Tate Borger, offers tailored mortgage solutions to meet your needs. We simplify the mortgage process, providing personalized advice, competitive rates, and transparent service.</p>
+								<p>For more information about what we do, check out our <a href="#financing">financing information</a>.</p>
+							</article>
+
+						<!-- Financing -->
+							<article id="financing">
+							<h2 class="major">Financing Solutions</h2>
+
+							<p>
+								Whether you're purchasing your first home, refinancing an existing loan,
+								building an investment portfolio or seeking business finance, ProLink Finance
+								can help you find a lending solution tailored to your goals.
+							</p>
+
+							<h3>What Type Of Finance Are You Looking For?</h3>
+
+							<div class="finance-buttons">
+
+								<button type="button" class="finance-btn active"
+									onclick="showFinance('fhb', this)">
+									First Home Buyers
+								</button>
+
+								<button type="button" class="finance-btn"
+									onclick="showFinance('refi', this)">
+									Refinancing
+								</button>
+
+								<button type="button" class="finance-btn"
+									onclick="showFinance('invest', this)">
+									Investment
+								</button>
+
+								<button type="button" class="finance-btn"
+									onclick="showFinance('asset', this)">
+									Asset Finance
+								</button>
+
+								<button type="button" class="finance-btn"
+									onclick="showFinance('construction', this)">
+									Construction
+								</button>
+
+								<button type="button" class="finance-btn"
+									onclick="showFinance('commercial', this)">
+									Commercial
+								</button>
+
+							</div>
+
+							<div id="finance-content">
+
+								<!-- First Home Buyers -->
+								<div class="finance-panel" id="fhb">
+
+									<h3>🏠 First Home Buyers</h3>
+
+									<p>
+										Purchasing your first home is one of life's biggest milestones.
+										We help simplify the process and guide you from pre-approval
+										through to settlement.
+									</p>
+
+									<ul>
+										<li>First Home Guarantee assistance</li>
+										<li>Deposit strategy guidance</li>
+										<li>Borrowing capacity assessments</li>
+										<li>Pre-approval support</li>
+										<li>Access to a broad lender panel</li>
+									</ul>
+
+								</div>
+
+								<!-- Refinancing -->
+								<div class="finance-panel" id="refi" style="display:none;">
+
+									<h3>🔄 Refinancing</h3>
+
+									<p>
+										If your current loan no longer meets your needs, refinancing may
+										help reduce repayments, consolidate debt or unlock equity.
+									</p>
+
+									<ul>
+										<li>Interest rate reviews</li>
+										<li>Debt consolidation</li>
+										<li>Accessing home equity</li>
+										<li>Loan restructuring</li>
+										<li>Cash-back and promotional offers</li>
+									</ul>
+
+								</div>
+
+								<!-- Investment Loans -->
+								<div class="finance-panel" id="invest" style="display:none;">
+
+									<h3>💰 Investment Loans</h3>
+
+									<p>
+										Whether you're purchasing your first investment property or
+										expanding an existing portfolio, we can help structure your
+										lending effectively.
+									</p>
+
+									<ul>
+										<li>Investment property finance</li>
+										<li>Interest-only lending options</li>
+										<li>Portfolio growth strategies</li>
+										<li>Equity utilisation</li>
+										<li>Access to investor-friendly lenders</li>
+									</ul>
+
+								</div>
+
+								<!-- Asset Finance -->
+								<div class="finance-panel" id="asset" style="display:none;">
+
+									<h3>🚗 Asset Finance</h3>
+
+									<p>
+										Finance vehicles, equipment and business assets through
+										competitive lending solutions tailored to your requirements.
+									</p>
+
+									<ul>
+										<li>Motor vehicle finance</li>
+										<li>Equipment finance</li>
+										<li>Business asset funding</li>
+										<li>Chattel mortgages</li>
+										<li>Commercial hire purchase options</li>
+									</ul>
+
+								</div>
+
+								<!-- Construction Loans -->
+								<div class="finance-panel" id="construction" style="display:none;">
+
+									<h3>🏗️ Construction Loans</h3>
+
+									<p>
+										Building a new home requires specialist lending support.
+										We guide clients through every stage of the construction process.
+									</p>
+
+									<ul>
+										<li>Construction loan approvals</li>
+										<li>Progress payment management</li>
+										<li>Builder and contract review support</li>
+										<li>Owner-builder guidance</li>
+										<li>End-to-end project assistance</li>
+									</ul>
+
+								</div>
+
+								<!-- Commercial Finance -->
+								<div class="finance-panel" id="commercial" style="display:none;">
+
+									<h3>🏢 Commercial Finance</h3>
+
+									<p>
+										Tailored funding solutions for commercial property purchases,
+										business expansion and specialised lending requirements.
+									</p>
+
+									<ul>
+										<li>Commercial property finance</li>
+										<li>Business lending solutions</li>
+										<li>Working capital facilities</li>
+										<li>Development finance</li>
+										<li>Specialist lender access</li>
+									</ul>
+
+								</div>
+
+							</div>
+
+							</article>
+
+						<!-- News -->
+							<article id="news">
+								<h2 class="major">News</h2>
+
+								<!-- Article 1 -->
+								<h3>RBA Holds Interest Rates</h3>
+
+								<span class="image left">
+									<img src="images/rba.jpg" alt="RBA Interest Rates">
+								</span>
+
+								<p>
+									<strong>6 June 2026</strong><br>
+									The Reserve Bank has elected to leave interest rates unchanged at its latest meeting.
+									For borrowers and property investors, this may provide greater certainty heading into the second half of the year.
+								</p>
+
+								<p>
+									<a href="https://www.rba.gov.au/" target="_blank">
+										Read More →
+									</a>
+								</p>
+
+								<hr />
+
+								<!-- Article 2 -->
+								<h3>First Home Buyer Update</h3>
+
+								<span class="image left">
+									<img src="images/FHB.jpg" alt="First Home Buyers">
+								</span>
+
+								<p>
+									<strong>20 May 2026</strong><br>
+									New government initiatives may help eligible first home buyers enter the property market with a lower deposit.
+									Understanding your borrowing capacity remains critical.
+								</p>
+
+								<p>
+									<a href="https://www.housingaustralia.gov.au/" target="_blank">
+										Read More →
+									</a>
+								</p>
+
+								<hr />
+
+								<!-- Article 3 -->
+								<h3>How Much Deposit Do You Really Need?</h3>
+
+								<span class="image left">
+									<img src="images/deposit.jpg" alt="Home Deposit">
+								</span>
+
+								<p>
+									<strong>8 May 2026</strong><br>
+									Many Australians believe a 20% deposit is mandatory. In reality,
+									several lending options may allow borrowers to purchase sooner,
+									depending on their circumstances.
+								</p>
+
+								<p>
+									<a href="https://moneysmart.gov.au/" target="_blank">
+										Read More →
+									</a>
+								</p>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+
+								<form id="contact-form"
+									method="POST"
+									action="https://formspree.io/f/mreverqb">
+
+									<input type="hidden"
+										name="_subject"
+										value="New Enquiry - ProLink Finance">
+
+									<!-- Spam protection -->
+									<input type="text"
+										name="_gotcha"
+										style="display:none">
+
+									<div class="fields">
+
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text"
+												name="name"
+												id="name"
+												required />
+										</div>
+
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="email"
+												name="email"
+												id="email"
+												required />
+										</div>
+
+										<div class="field half">
+											<label for="phone">Phone Number</label>
+											<input type="tel"
+												name="phone"
+												id="phone"
+												required />
+										</div>
+
+										<div class="field">
+											<label for="message">How can we help?</label>
+											<textarea name="message"
+													id="message"
+													rows="5"
+													required></textarea>
+										</div>
+
+									</div>
+
+									<ul class="actions">
+										<li><input type="submit" value="Send Enquiry" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+
+								</form>
+
+								<p id="form-success" style="display:none;">
+									✓ Thank you for contacting ProLink Finance. We'll be in touch shortly.
+								</p>
+
+								<hr />
+
+								<h3>Get In Touch Directly</h3>
+
+								<p style="margin-bottom:0.5rem;">
+									If you'd prefer to speak with us directly, feel free to call or email:
+								</p>
+
+								<p>
+									<strong>Tate Borger</strong><br />
+									📞 <a href="tel:0435179421">0435 179 421</a><br />
+									✉️ <a href="mailto:tborger@prolinkfinance.com.au">tborger@prolinkfinance.com.au</a>
+								</p>
+
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
+								</ul>
+
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; PROLINK FINANCE PTY LIMITED.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/showFinance.js"></script>
+			<script src="assets/js/contactForm.js"></script>			
+	</body>
+</html>

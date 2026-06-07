@@ -1,41 +1,56 @@
 document.addEventListener("DOMContentLoaded", function () {
-const form = document.getElementById("contact-form");
 
-if (!form) return;
+    const form = document.getElementById("contact-form");
 
-form.addEventListener("submit", async function (e) {
+    if (!form) return;
 
-    e.preventDefault();
+    form.addEventListener("submit", async function (e) {
 
-    const data = new FormData(form);
+        e.preventDefault();
 
-    try {
+        const submitButton = form.querySelector('input[type="submit"]');
 
-        const response = await fetch(form.action, {
-            method: "POST",
-            body: data,
-            headers: {
-                "Accept": "application/json"
+        submitButton.disabled = true;
+        submitButton.value = "Sending...";
+
+        const data = new FormData(form);
+
+        try {
+
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: data,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+
+                document.getElementById("form-success").style.display = "block";
+
+                form.reset();
+
+                submitButton.value = "Enquiry Sent ✓";
+
+            } else {
+
+                alert("There was an issue sending your enquiry. Please try again.");
+
+                submitButton.disabled = false;
+                submitButton.value = "Send Enquiry";
+
             }
-        });
 
-        if (response.ok) {
-
-            document.getElementById("form-success").style.display = "block";
-
-            form.reset();
-
-        } else {
+        } catch (error) {
 
             alert("There was an issue sending your enquiry. Please try again.");
 
+            submitButton.disabled = false;
+            submitButton.value = "Send Enquiry";
+
         }
 
-    } catch (error) {
+    });
 
-        alert("There was an issue sending your enquiry. Please try again.");
-
-    }
-
-});
 });
